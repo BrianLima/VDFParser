@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9543FB59-1EB6-4638-B24C-B12B9D4A15FC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>VDFParser</RootNamespace>
+    <AssemblyName>VDFParser</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Machines\VDFFieldsSM.cs" />
+    <Compile Include="Machines\VDFIndexedArraySM.cs" />
+    <Compile Include="Models\VDFEntry.cs" />
+    <Compile Include="Models\VDFField.cs" />
+    <Compile Include="Models\VDFFieldType.cs" />
+    <Compile Include="VDFParser.cs" />
+    <Compile Include="Machines\VDFSM.cs" />
+    <Compile Include="Exceptions.cs" />
+    <Compile Include="VDFSerializer.cs" />
+    <Compile Include="Shared.cs" />
+    <Compile Include="GenericWriter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Machines\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
