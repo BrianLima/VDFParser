@@ -51,6 +51,7 @@
     <EmbeddedResource Include="Resources\shortcuts2.vdf" />
     <EmbeddedResource Include="Resources\shortcuts4.vdf" />
     <EmbeddedResource Include="Resources\shortcuts.vdf" />
+    <EmbeddedResource Include="Resources\shortcuts_utf8.vdf" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -7,12 +7,6 @@ namespace VDFParserTests {
     public class ParserTests {
 
         [Test]
-        public void TmpTestCase() {
-            var result = VDFParser.VDFParser.Parse("/Users/victorgama/Downloads/shortcuts4(1).vdf");
-            Console.WriteLine(result);
-        }
-
-        [Test]
         public void TestParserBehaviour() {
             var subjects = new string[] { "shortcuts", "shortcuts4" };
             foreach(var subject in subjects) {

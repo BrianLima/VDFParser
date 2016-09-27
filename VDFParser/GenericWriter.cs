@@ -30,7 +30,7 @@ namespace VDFParser {
         /// </summary>
         /// <param name="value">String value to be written</param>
         public void Write(string value) {
-            Write(Encoding.ASCII.GetBytes(value));
+            Write(Encoding.UTF8.GetBytes(value));
         }
 
         /// <summary>

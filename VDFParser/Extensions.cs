@@ -17,7 +17,7 @@ namespace VDFParser {
         /// </summary>
         /// <returns>A decoded string from the byte array</returns>
         public static string StringFromByteArray(this byte[] list) {
-            return new ASCIIEncoding().GetString(list); 
+            return new UTF8Encoding().GetString(list); 
         }
     }
 }
