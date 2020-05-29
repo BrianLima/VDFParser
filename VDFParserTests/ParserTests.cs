@@ -25,10 +25,15 @@ namespace VDFParserTests {
                     StartDir = "\"D:\\Program Files\\GH\\\"",
                     Icon = "",
                     ShortcutPath = "",
+                    LaunchOptions = "",
                     IsHidden = 0,
                     AllowDesktopConfig = 1,
+                    AllowOverlay = 1,
                     OpenVR = 0,
-                    Tags = new string[] { },
+                    Devkit = 0,
+                    DevkitGameID = "",
+                    LastPlayTime = 1590640610,
+                    Tags = new string[] { "Music" },
                     Index = 0
                 }
             };
@@ -43,9 +48,14 @@ namespace VDFParserTests {
                 Assert.AreEqual(exp.StartDir, par.StartDir);
                 Assert.AreEqual(exp.Icon, par.Icon);
                 Assert.AreEqual(exp.ShortcutPath, par.ShortcutPath);
+                Assert.AreEqual(exp.LaunchOptions, par.LaunchOptions);
                 Assert.AreEqual(exp.IsHidden, par.IsHidden);
                 Assert.AreEqual(exp.AllowDesktopConfig, par.AllowDesktopConfig);
+                Assert.AreEqual(exp.AllowOverlay, par.AllowOverlay);
                 Assert.AreEqual(exp.OpenVR, par.OpenVR);
+                Assert.AreEqual(exp.Devkit, par.Devkit);
+                Assert.AreEqual(exp.DevkitGameID, par.DevkitGameID);
+                Assert.AreEqual(exp.LastPlayTime, par.LastPlayTime);
                 Assert.AreEqual(exp.Tags, par.Tags);
             }
         }

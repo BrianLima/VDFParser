@@ -19,13 +19,14 @@
         public string AppName { get; set; }
 
         /// <summary>
-        /// Gets or sets the app executable path. Extra arguments should be provided
-        /// within this string and should use the following format:
-        /// "/path/to/binary" -arg1 "argument with spaces"
-        /// or the following format, if no argument is required:
+        /// Gets or sets the app executable path.
+        /// Must use the following format:
         /// "/path/to/binary"
+        /// Extra arguments should be provided in LaunchOptions,
+        /// but may also be provided within this string using the format:
+        /// "/path/to/binary" -arg1 "argument with spaces"
         /// </summary>
-        /// <value>The executable path, along with its command line arguments</value>
+        /// <value>The executable path.</value>
         [VDFField("exe")]
         public string Exe { get; set; }
 
@@ -51,6 +52,13 @@
         public string ShortcutPath { get; set; }
 
         /// <summary>
+        /// Gets or sets the application launch options.
+        /// </summary>
+        /// <value>The application launch options.</value>
+        [VDFField("LaunchOptions")]
+        public string LaunchOptions { get; set; }
+
+        /// <summary>
         /// Gets or sets whether the application is hidden. 
         /// Use 1 for true, or 0 otherwise.
         /// </summary>
@@ -67,18 +75,49 @@
         public int AllowDesktopConfig { get; set; }
 
         /// <summary>
-        /// Gets or sets whether this is an OpenVR application
+        /// Gets or sets whether Steam overlay is allowed.
+        /// Use 1 for true, or 0 otherwise.
+        /// </summary>
+        /// <value>Whether the Steam overlay is allowed</value>
+        [VDFField("AllowOverlay", Type = VDFFieldType.Integer)]
+        public int AllowOverlay { get; set; }
+
+        /// <summary>
+        /// Gets or sets whether this is an OpenVR application.
         /// Use 1 for true, or 0 otherwise.
         /// </summary>
         /// <value>Whether this is an OpenVR application</value>
-        [VDFField("OpenVR", Type = VDFFieldType.Integer)]
+        [VDFField("openvr", Type = VDFFieldType.Integer)]
         public int OpenVR { get; set; }
+
+        /// <summary>
+        /// Gets or sets whether this is an Devkit application.
+        /// Use 1 for true, or 0 otherwise.
+        /// </summary>
+        /// <value>Whether this is an Devkit application</value>
+        [VDFField("Devkit", Type = VDFFieldType.Integer)]
+        public int Devkit { get; set; }
+
+        /// <summary>
+        /// Gets or sets the Devkit Game ID for this application.
+        /// </summary>
+        /// <value>Devkit Game ID for this application</value>
+        [VDFField("DevkitGameID")]
+        public string DevkitGameID { get; set; }
+
+        /// <summary>
+        /// Gets or sets the last play time for this application.
+        /// Use a UNIX timestamp, or 0 for never played.
+        /// </summary>
+        /// <value>Last Play Time as UNIX timestamp</value>
+        [VDFField("LastPlayTime", Type = VDFFieldType.Integer)]
+        public int LastPlayTime { get; set; }
 
         /// <summary>
         /// Gets or sets a list of tags for the application
         /// </summary>
         /// <value>Tags list for the application</value>
-        [VDFField("tags", Type=VDFFieldType.IndexedArray)]
+        [VDFField("tags", Type = VDFFieldType.IndexedArray)]
         public string[] Tags { get; set; }
 
         /// <summary>
@@ -86,7 +125,7 @@
         /// </summary>
         /// <returns>A <see cref="T:System.String"/> that represents the current <see cref="T:VDFParser.Models.VDFEntry"/>.</returns>
         public override string ToString() {
-            return string.Format("[VDFEntry: AppName={0}, Exe={1}, StartDir={2}, Icon={3}, ShortcutPath={4}, IsHidden={5}, AllowDesktopConfig={6}, OpenVR={7}, Tags={8}]", AppName, Exe, StartDir, Icon, ShortcutPath, IsHidden, AllowDesktopConfig, OpenVR, Tags == null ? "(null)" : string.Join(", ", Tags));
+            return string.Format("[VDFEntry: AppName={0}, Exe={1}, StartDir={2}, Icon={3}, ShortcutPath={4}, LaunchOptions={5}, IsHidden={6}, AllowDesktopConfig={7}, AllowOverlay={8}, OpenVR={9}, Devkit={10}, DevkitGameID={11}, LastPlayTime={12}, Tags={13}]", AppName, Exe, StartDir, Icon, ShortcutPath, LaunchOptions, IsHidden, AllowDesktopConfig, AllowOverlay, OpenVR, Devkit, DevkitGameID, LastPlayTime, Tags == null ? "(null)" : string.Join(", ", Tags));
         }
     }
 }
