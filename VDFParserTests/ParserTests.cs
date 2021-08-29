@@ -20,6 +20,7 @@ namespace VDFParserTests {
         public void TestParsedContents() {
             var expectations = new VDFEntry[] {
                 new VDFEntry() {
+                    appid = 123456,
                     AppName = "Guitar Hero World Tour",
                     Exe = "\"D:\\Program Files\\GH\\GHWT.exe\"",
                     StartDir = "\"D:\\Program Files\\GH\\\"",
@@ -43,6 +44,7 @@ namespace VDFParserTests {
                 var par = entries[i];
 
                 Assert.AreEqual(exp.Index, par.Index);
+                Assert.AreEqual(exp.appid, par.appid);
                 Assert.AreEqual(exp.AppName, par.AppName);
                 Assert.AreEqual(exp.Exe, par.Exe);
                 Assert.AreEqual(exp.StartDir, par.StartDir);
