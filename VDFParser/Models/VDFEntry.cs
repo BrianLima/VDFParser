@@ -2,6 +2,7 @@
 
     /// <summary>
     /// Represents a VDF entry
+    /// Reference: https://developer.valvesoftware.com/wiki/Add_Non-Steam_Game
     /// </summary>
     public class VDFEntry {
 
@@ -12,10 +13,17 @@
         public int Index { get; set; }
 
         /// <summary>
+        /// Gets or sets the appid of the app.
+        /// </summary>
+        /// <value>The id of the app.</value>
+        [VDFField("appid")]
+        public int appid { get; set; }
+
+        /// <summary>
         /// Gets or sets the name of the app.
         /// </summary>
         /// <value>The name of the app.</value>
-        [VDFField("appname")]
+        [VDFField("AppName")]
         public string AppName { get; set; }
 
         /// <summary>
@@ -27,7 +35,7 @@
         /// "/path/to/binary" -arg1 "argument with spaces"
         /// </summary>
         /// <value>The executable path.</value>
-        [VDFField("exe")]
+        [VDFField("Exe")]
         public string Exe { get; set; }
 
         /// <summary>
