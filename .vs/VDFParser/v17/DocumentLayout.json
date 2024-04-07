@@ -1,12 +1,87 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Brian\\Documents\\GitHub\\VDFParser\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F080DE97-E69A-4D2F-B92A-794FE31A1733}|VDFParserTests\\VDFParserTests.csproj|C:\\Users\\Brian\\Documents\\GitHub\\VDFParser\\vdfparsertests\\serializertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F080DE97-E69A-4D2F-B92A-794FE31A1733}|VDFParserTests\\VDFParserTests.csproj|solutionrelative:vdfparsertests\\serializertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9543FB59-1EB6-4638-B24C-B12B9D4A15FC}|VDFParser\\VDFParser.csproj|C:\\Users\\Brian\\Documents\\GitHub\\VDFParser\\vdfparser\\vdfparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9543FB59-1EB6-4638-B24C-B12B9D4A15FC}|VDFParser\\VDFParser.csproj|solutionrelative:vdfparser\\vdfparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F080DE97-E69A-4D2F-B92A-794FE31A1733}|VDFParserTests\\VDFParserTests.csproj|c:\\users\\brian\\documents\\github\\vdfparser\\vdfparsertests\\parsertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F080DE97-E69A-4D2F-B92A-794FE31A1733}|VDFParserTests\\VDFParserTests.csproj|solutionrelative:vdfparsertests\\parsertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F080DE97-E69A-4D2F-B92A-794FE31A1733}|VDFParserTests\\VDFParserTests.csproj|C:\\Users\\Brian\\Documents\\GitHub\\VDFParser\\vdfparsertests\\helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F080DE97-E69A-4D2F-B92A-794FE31A1733}|VDFParserTests\\VDFParserTests.csproj|solutionrelative:vdfparsertests\\helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VDFParser.cs",
+              "DocumentMoniker": "C:\\Users\\Brian\\Documents\\GitHub\\VDFParser\\VDFParser\\VDFParser.cs",
+              "RelativeDocumentMoniker": "VDFParser\\VDFParser.cs",
+              "ToolTip": "C:\\Users\\Brian\\Documents\\GitHub\\VDFParser\\VDFParser\\VDFParser.cs",
+              "RelativeToolTip": "VDFParser\\VDFParser.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAEwCUAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-06T15:50:37.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Helpers.cs",
+              "DocumentMoniker": "C:\\Users\\Brian\\Documents\\GitHub\\VDFParser\\VDFParserTests\\Helpers.cs",
+              "RelativeDocumentMoniker": "VDFParserTests\\Helpers.cs",
+              "ToolTip": "C:\\Users\\Brian\\Documents\\GitHub\\VDFParser\\VDFParserTests\\Helpers.cs",
+              "RelativeToolTip": "VDFParserTests\\Helpers.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-06T14:45:25.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SerializerTests.cs",
+              "DocumentMoniker": "C:\\Users\\Brian\\Documents\\GitHub\\VDFParser\\VDFParserTests\\SerializerTests.cs",
+              "RelativeDocumentMoniker": "VDFParserTests\\SerializerTests.cs",
+              "ToolTip": "C:\\Users\\Brian\\Documents\\GitHub\\VDFParser\\VDFParserTests\\SerializerTests.cs",
+              "RelativeToolTip": "VDFParserTests\\SerializerTests.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAawBsAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-06T14:38:56.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ParserTests.cs",
+              "DocumentMoniker": "C:\\Users\\Brian\\Documents\\GitHub\\VDFParser\\VDFParserTests\\ParserTests.cs",
+              "RelativeDocumentMoniker": "VDFParserTests\\ParserTests.cs",
+              "ToolTip": "C:\\Users\\Brian\\Documents\\GitHub\\VDFParser\\VDFParserTests\\ParserTests.cs",
+              "RelativeToolTip": "VDFParserTests\\ParserTests.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAvwEEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-06T14:37:22.887Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

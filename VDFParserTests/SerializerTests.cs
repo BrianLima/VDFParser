@@ -2,6 +2,7 @@
 using VDFParser.Models;
 using NUnit.Framework;
 using System.IO;
+using NUnit.Framework.Legacy;
 
 namespace VDFParserTests {
     [TestFixture]
@@ -14,7 +15,7 @@ namespace VDFParserTests {
             originalDataStream.Seek(0, SeekOrigin.Begin);
             var entries = VDFParser.VDFParser.Parse(originalDataStream);
             byte[] serializedData = VDFSerializer.Serialize(entries);
-            Assert.AreEqual(originalData, serializedData);
+            ClassicAssert.AreEqual(originalData, serializedData);
         }
 
         [Test]
@@ -25,7 +26,7 @@ namespace VDFParserTests {
             originalDataStream.Seek(0, SeekOrigin.Begin);
             var entries = VDFParser.VDFParser.Parse(originalDataStream);
             byte[] serializedData = VDFSerializer.Serialize(entries);
-            Assert.AreEqual(originalData, serializedData);
+            ClassicAssert.AreEqual(originalData, serializedData);
         }
     }
 }

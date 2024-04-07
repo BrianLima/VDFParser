@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using VDFParser.Models;
 using System;
+using NUnit.Framework.Legacy;
 
 namespace VDFParserTests {
     [TestFixture]
@@ -20,7 +21,7 @@ namespace VDFParserTests {
         public void TestParsedContents() {
             var expectations = new VDFEntry[] {
                 new VDFEntry() {
-                    appid = 123456,
+                    appid = 875770417,
                     AppName = "Guitar Hero World Tour",
                     Exe = "\"D:\\Program Files\\GH\\GHWT.exe\"",
                     StartDir = "\"D:\\Program Files\\GH\\\"",
@@ -43,22 +44,22 @@ namespace VDFParserTests {
                 var exp = expectations[i];
                 var par = entries[i];
 
-                Assert.AreEqual(exp.Index, par.Index);
-                Assert.AreEqual(exp.appid, par.appid);
-                Assert.AreEqual(exp.AppName, par.AppName);
-                Assert.AreEqual(exp.Exe, par.Exe);
-                Assert.AreEqual(exp.StartDir, par.StartDir);
-                Assert.AreEqual(exp.Icon, par.Icon);
-                Assert.AreEqual(exp.ShortcutPath, par.ShortcutPath);
-                Assert.AreEqual(exp.LaunchOptions, par.LaunchOptions);
-                Assert.AreEqual(exp.IsHidden, par.IsHidden);
-                Assert.AreEqual(exp.AllowDesktopConfig, par.AllowDesktopConfig);
-                Assert.AreEqual(exp.AllowOverlay, par.AllowOverlay);
-                Assert.AreEqual(exp.OpenVR, par.OpenVR);
-                Assert.AreEqual(exp.Devkit, par.Devkit);
-                Assert.AreEqual(exp.DevkitGameID, par.DevkitGameID);
-                Assert.AreEqual(exp.LastPlayTime, par.LastPlayTime);
-                Assert.AreEqual(exp.Tags, par.Tags);
+                ClassicAssert.AreEqual(exp.Index, par.Index);
+                ClassicAssert.AreEqual(exp.appid, par.appid);
+                ClassicAssert.AreEqual(exp.AppName, par.AppName);
+                ClassicAssert.AreEqual(exp.Exe, par.Exe);
+                ClassicAssert.AreEqual(exp.StartDir, par.StartDir);
+                ClassicAssert.AreEqual(exp.Icon, par.Icon);
+                ClassicAssert.AreEqual(exp.ShortcutPath, par.ShortcutPath);
+                ClassicAssert.AreEqual(exp.LaunchOptions, par.LaunchOptions);
+                ClassicAssert.AreEqual(exp.IsHidden, par.IsHidden);
+                ClassicAssert.AreEqual(exp.AllowDesktopConfig, par.AllowDesktopConfig);
+                ClassicAssert.AreEqual(exp.AllowOverlay, par.AllowOverlay);
+                ClassicAssert.AreEqual(exp.OpenVR, par.OpenVR);
+                ClassicAssert.AreEqual(exp.Devkit, par.Devkit);
+                ClassicAssert.AreEqual(exp.DevkitGameID, par.DevkitGameID);
+                ClassicAssert.AreEqual(exp.LastPlayTime, par.LastPlayTime);
+                ClassicAssert.AreEqual(exp.Tags, par.Tags);
             }
         }
     }
